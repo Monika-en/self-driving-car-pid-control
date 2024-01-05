@@ -10,4 +10,10 @@ RUN chmod +x build.sh
 RUN install_deps.sh
 RUN build.sh
 
-ENTRYPOINT ["/bin/bash"]
+RUN mkdir /app
+RUN mv pid /app/
+
+RUN rm -rf /source
+
+WORKDIR /app
+ENTRYPOINT ["pid"]
