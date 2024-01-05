@@ -13,7 +13,7 @@ RUN ./install_deps.sh
 RUN ./build.sh
 
 RUN mkdir /app
-RUN mv pid /app/
+RUN mv /source/build/pid /app/
 
 RUN rm -rf /source
 
