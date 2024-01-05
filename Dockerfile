@@ -1,8 +1,10 @@
 FROM alpine:3.19
 
-add . /source
+ADD . /source
 
 WORKDIR /source
+
+RUN ls -la
 
 RUN chmod +x install_deps.sh
 RUN chmod +x build.sh
