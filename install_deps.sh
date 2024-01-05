@@ -1,9 +1,9 @@
 #! /bin/bash
-sudo apt-get update
-sudo apt-get install git libuv1-dev libssl-dev gcc g++ cmake make
+
+sudo apt install gcc g++ make cmake libuv1-dev git
 git clone https://github.com/uWebSockets/uWebSockets 
 cd uWebSockets
-git checkout e94b6e1
+# git checkout e94b6e1
 mkdir build
 cd build
 cmake ..
