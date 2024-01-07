@@ -1,6 +1,6 @@
 #!/bin/sh
 apt-get update
-apt-get -y install zlib1g-dev libssl-dev gcc g++ make cmake libuv1-dev git
+apt-get -y install zlib1g-dev libssl-dev gcc g++ make cmake libuv1-dev git zip
 git clone https://github.com/uWebSockets/uWebSockets 
 cd uWebSockets
 git checkout e94b6e1
